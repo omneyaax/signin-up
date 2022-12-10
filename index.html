@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password" />
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                    </svg></label>
+                                <input type="text" name="phone" id="phone" placeholder="Your Phone Number" />
+                            </div>
+
+                            <div class="row form-group">
+                                <label for="city"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+                                    </svg>  </label>
+                                <select  name="gover" id="gover" >
+                                    <option selected disabled>Select An Option</option>
+                                    <option value="الغربية">الغربية </option>
+                                    <option value="الإسكندرية">الإسكندرية</option>
+                                    <option value="الإسماعيلية">الإسماعيلية</option>
+                                    <option value="كفر الشيخ">كفر الشيخ</option>
+                                    <option value="أسوان">أسوان</option>
+                                    <option value="أسيوط">أسيوط</option>
+                                    <option value="الأقصر">الأقصر</option>
+                                    <option value="الوادي الجديد">الوادي الجديد</option>
+                                    <option value="شمال سيناء">شمال سيناء</option>
+                                    <option value="البحيرة">البحيرة</option>
+                                    <option value="بني سويف">بني سويف</option>
+                                    <option value="بورسعيد">بورسعيد</option>
+                                    <option value="البحر الأحمر">البحر الأحمر</option>
+                                    <option value="الجيزة">الجيزة</option>
+                                    <option value="الدقهلية">الدقهلية</option>
+                                    <option value="جنوب سيناء">جنوب سيناء</option>
+                                    <option value="دمياط">دمياط</option>
+                                    <option value="سوهاج">سوهاج</option>
+                                    <option value="السويس">السويس</option>
+                                    <option value="الشرقية">الشرقية</option>
+                                    <option value="الغربية">الغربية</option>
+                                    <option value="الفيوم">الفيوم</option>
+                                    <option value="القاهرة">القاهرة</option>
+                                    <option value="القليوبية">القليوبية</option>
+                                    <option value="قنا">قنا</option>
+                                    <option value="مطروح">مطروح</option>
+                                    <option value="المنوفية">المنوفية</option>
+                                    <option value="المنيا">المنيا</option>
+                                </select>
+                                
+                        
+                               
+                            </div>
+                            
+                            <div class="details hide"id="details">
+                                <input placeholder="City Name" type="text">
+                                <input placeholder="Street Name" type="text">
+                                <input placeholder="Building Number" type="text">
+                                <input placeholder="Floor Number" type="text">
+                                <input placeholder="Apartment Number" type="text">
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                    statements in <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button bg-alert">
+                                <input type="submit" name="signup" id="signup" class="form-submit btn-alert"
+                                    value="Register" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/Background.png" alt="sing up image"></figure>
+                        <a href="login.html" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
